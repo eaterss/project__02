@@ -1,0 +1,197 @@
+@media screen  and (min-width:1280px){
+	.container {
+		width: 1280px;
+	}
+}
+/*第一大块*/
+li {
+	list-style: none;
+}
+#logo {
+	text-align: center;
+	width: 100%;
+	height: 9rem;
+	background-color: #429ad9;
+}
+#logo img {
+	max-width: 100%;/*要理解maxwidth和width的区别*/
+	height: 100%;
+	margin-top: 0 auto;	
+}
+/*超小屏幕下显示为span，隐藏img*/
+span {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #429ad9;
+}
+header ul {
+	overflow: hidden;
+	background-color: #eeeeee;
+}
+header #shu li {
+	margin: 20px 0 0 10px;
+}
+header #shu li:last-child {
+	margin-bottom: 20px;
+}
+/*利用hidden和visible，当最小屏和小屏的时候，导航栏横向排列*/
+header #heng {
+	padding: 0;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+header #heng li {
+	display: inline-block;
+	width: 18%;
+}
+/*第二大块*/
+article {
+	margin-top: 20px;
+}
+#logomiddle img {
+	width: 100%;
+	height: 216px;
+}
+#logomiddle span {
+	display: block;
+	padding-left: 5px;
+	color: white;
+	background-color: #5f5f5f;
+	height: 38px;
+	line-height: 38px;
+}
+article .row .col-md-6 {
+	height: 254px;
+}
+
+
+
+/*article .row div:last-child {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+article .row .col-md-6 img {
+	width: 49%;
+	height: 49%;
+}
+article .row .col-md-6 img:nth-child(-n+2) {
+	margin-bottom: 10px;
+}/*马云四幅图也可以用以上代码代替*/
+article .row div:nth-child(2) img {
+	float: left;
+	width: 50%;
+	height: 123px;
+}
+article .row div:nth-child(2) img:first-child{
+	padding-right: 4px;
+}
+article .row div:nth-child(2) img:nth-child(2){
+	padding-left: 4px;
+}
+article .row div:nth-child(2) img:nth-child(3){
+	padding-right: 4px;
+	margin-top: 8px;
+}
+article .row div:nth-child(2) img:nth-child(4){
+	padding-left: 4px;
+	margin-top: 8px;
+}
+
+
+
+
+article ul {
+	margin-top: 10px;
+}
+article ul li {
+	position: relative;
+	height: 213px;
+}
+article ul li:first-child {
+	border-top: 1px solid;
+}
+article ul li .left {
+	float: left;
+	width: 70%;
+}
+article ul li .hidden-xs {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	float: left;
+	width: 25%;
+	height: 120px;
+	background: url(../img/健康知识.png) no-repeat;
+	background-size: 100% 100%;
+	}
+/*当屏幕小于最小屏时，修改文本大小使文字不超出li的范围,删掉图片等不必要的内容，将剩余内容居中*/
+@media screen and (max-width:991px) {
+	article ul li h3 {
+		font-size: 18px;
+	}
+	/*这段代码用处不大，可以提前让阿里百秀和马云一直维持左右位置不变*/
+	article .row #logomiddle {
+		display: inline-block;
+		width: 50%;
+		transform: translateY(-10px);
+	}
+	article ul li .left {
+		float: left;
+		width: 100%;/*70%*/
+	}
+	article .row #picture {
+		display: inline-block;
+		width: 49%;
+	}
+	/*article .row .col-md-6 img:nth-child(-n+2) {
+		margin-bottom: 5px;
+	}
+	article .row .col-md-6 {
+		margin-top: 10px;
+	}*/
+}
+@media screen and (max-width:768px){
+	article ul li {
+		height: 100px;
+		text-align: center;
+	}
+	
+}
+/*第三大块*/
+#welcome {
+	margin-top: 20px;
+}
+#welcome div:first-child img {
+	width: 100%;
+}
+#welcome div:nth-child(2) {
+	width: 100%;
+	margin-top:20px;
+	border: 1px solid gray;
+}
+#welcome div:nth-child(2) .hot {
+	width: 40px;
+	margin-left: 10px;
+	background-color: #4688c6;
+	color: white;
+	text-align: center;
+}
+#welcome div:nth-child(2) h3 {
+	color: #b4daff;
+	margin-left: 10px;
+}
+#welcome div:nth-child(2) p {
+	margin-left: 10px;
+}
+@media screen and (max-width:1200px) {
+	#welcome div:nth-child(2) h3 {
+		font-size: 18px;
+	}
+}
